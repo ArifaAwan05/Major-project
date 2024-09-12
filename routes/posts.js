@@ -18,8 +18,8 @@ router.get("/allPosts", (req,res)=> {
 })
 
 router.post("/createpost",loginMid, (req,res)=> {
-const{title, body} = req.body;
-if(!title || !body){
+const{title, body, url} = req.body;
+if(!title || !body || !url){
     return res.status(422).json({error: "please add all fields"});
 }
 // console.log(req.user);
