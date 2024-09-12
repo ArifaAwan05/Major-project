@@ -21,4 +21,5 @@ const postSchema = new mongoose.Schema(
     },
 
 });
+//export Post Schema
 mongoose.model("Post", postSchema);

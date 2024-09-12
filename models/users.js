@@ -15,5 +15,6 @@ const user = new Schema({
         required:true
     },
 });
+//export user Schema
  mongoose.model("Users", user);
 
