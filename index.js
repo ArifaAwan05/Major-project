@@ -23,6 +23,7 @@ main().then(()=>{
 }).catch(err => {
     console.log(err);
 });
+
 //mongoose.connect(Mongo_URL);
 require('./models/users');
 require('./models/post');
@@ -30,7 +31,6 @@ require('./models/post');
 app.use(express.json())
 app.use(require('./routes/register'));
 app.use(require('./routes/posts'));
-
 
 app.listen(PORT, () => {
     console.log(`app is listening to ${PORT}`);

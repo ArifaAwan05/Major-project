@@ -40,10 +40,9 @@ const post = new Post({
 })
 
 //show all post ceated by a user
-
 router.get("/mypost", loginMid,(req, res) => {
    Post.find({ postedBy: req.user._id })
-     .populate("postedBy", "_id name") // Ensure this matches the field in your schema
+     .populate("postedBy", "_id name") // Ensure matches the field in the schema
      .then(mypost => {
        res.json({ mypost });
      })

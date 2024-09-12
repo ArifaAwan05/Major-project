@@ -8,7 +8,6 @@ module.exports = (req, res, next) => {
     if (!authHeader) {
         return res.status(401).json({ error: "You should be logged in" });
     }
-
     // Extract token assuming header format is 'Bearer <token>'
     const token = authHeader.replace("Bearer ", "");
     jwt.verify(token, process.env.JWT_KEY, async (err, payload) => {

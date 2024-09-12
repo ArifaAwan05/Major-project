@@ -8,7 +8,6 @@ const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const loginMid = require('../middleware/loginMid');
 
-
 //SignUp Authorization
 router.post("/signup", (req,res)=>{
     // console.log(req.body.name);
