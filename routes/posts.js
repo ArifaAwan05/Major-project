@@ -23,7 +23,7 @@ if(!title || !body){
     return res.status(422).json({error: "please add all fields"});
 }
 // console.log(req.user);
-// res.json("ok")
+//res.json("ok")
 req.user.password = undefined;
 const post = new Post({
     title,
