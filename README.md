@@ -1,4 +1,4 @@
-#SnapShare Project
+# SnapShare Project
 ## 1.	User Authentication:
 o	Secure sign-up and login processes with JWT-based authentication.
 o	Profile management for personalizing user accounts.
@@ -10,11 +10,8 @@ o	A dynamic feed that showcases posts from friends and followed accounts.
 o	Explore section to discover trending photos and popular users.
 ## 4.	Comments and Likes:
 o	Interactive features for users to like and comment on posts, fostering engagement.
-## 5.	Direct Messaging:
-o	Private messaging system for users to connect and share content directly.
-## 6.	Notifications:
-o	Real-time notifications for likes, comments, and new followers to keep users engaged.
-## 7.	Responsive Design:
+
+## 5.	Responsive Design:
 o	A mobile-friendly interface that ensures a great user experience across devices.
 
 # Technology Stack:
