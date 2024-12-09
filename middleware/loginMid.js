@@ -3,6 +3,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const Users = mongoose.model("Users");
 
+//Middle ware
 module.exports = (req, res, next) => {
     const authHeader = req.headers.authorization; // Use req.headers.authorization
     if (!authHeader) {
